@@ -2,11 +2,11 @@ openshift:
   templatePath: kube/template.yaml
 
 maven:
-  profileFeature: local
-  profileDevelop:
-  profileRelease:
-  profileMaster:
-  profileHotfix:
+  profileFeature: dev
+  profileDevelop: dev
+  profileRelease: uat
+  profileMaster: prod
+  profileHotfix: uat
 
 spring:
   profileFeature: dev
