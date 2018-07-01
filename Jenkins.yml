@@ -2,11 +2,11 @@ openshift:
   templatePath: kube/template.yaml
 
 maven:
-  profileFeature: dev
-  profileDevelop: dev
-  profileRelease: uat
-  profileMaster: prod
-  profileHotfix: uat
+  profileFeature:
+  profileDevelop:
+  profileRelease:
+  profileMaster:
+  profileHotfix:
 
 spring:
   profileFeature: dev
@@ -27,15 +27,15 @@ timeoutConfirmDeployUnit: MINUTES
 testing:
   predeploy:
     unitTesting:
-      - feature
-      - develop
-      - release
-      - hotfix
+      # - feature
+      # - develop
+      #  - release
+      # - hotfix
     sonarQube:
-      - feature
-      - develop
-      - release
-      - hotfix
+      # - feature
+      # - develop
+      # - release
+      # - hotfix
     checkstyle:
       # - feature
       # - develop
@@ -72,7 +72,7 @@ jenkins:
   errorOnPostDeployTestsUnstableResult: true
 
 appDynamics:
-  creationAppDynamicsConfigMap: true
+  creationAppDynamicsConfigMap: false
   branch:
     - release
     - master
